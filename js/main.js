@@ -16,12 +16,12 @@ for(let i = 0; i < elements.length; i++) {
 //task 3 bonus
 const container = document.getElementById('container');
 for(let i = 0; i < 5; i++) {
-    const element = document.createElement('div');
-    element.className = 'element';
-    const text = document.createElement('span');
-    text.innerText = `${i + 1}`;
-    text.style.color = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
-    element.innerText = 'Element ';
-    element.append(text);
-    container.append(element);
+    const elementBlock = document.createElement('div');
+    elementBlock.className = 'element';
+    const indexNumber = document.createElement('span');
+    indexNumber.innerText = `${i + 1}`;
+    indexNumber.style.color = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
+    elementBlock.innerText = 'Element ';
+    elementBlock.append(indexNumber);
+    container.append(elementBlock);
 };
