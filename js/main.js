@@ -13,3 +13,11 @@ for(let i = 0; i < elements.length; i++) {
         elements[i].style.color = 'green';
     };
 };
+//task 3
+const container = document.getElementById('container');
+for(let i = 0; i < 5; i++) {
+    const element = document.createElement('div');
+    element.className = 'element';
+    element.innerText = `Element ${i+1}`;
+    container.append(element);
+};
