@@ -13,11 +13,15 @@ for(let i = 0; i < elements.length; i++) {
         elements[i].style.color = 'green';
     };
 };
-//task 3
+//task 3 bonus
 const container = document.getElementById('container');
 for(let i = 0; i < 5; i++) {
     const element = document.createElement('div');
     element.className = 'element';
-    element.innerText = `Element ${i+1}`;
+    const text = document.createElement('span');
+    text.innerText = `${i + 1}`;
+    text.style.color = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
+    element.innerText = 'Element ';
+    element.append(text);
     container.append(element);
 };
